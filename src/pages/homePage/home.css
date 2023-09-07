@@ -7,6 +7,14 @@
 }
 
 .homeTitle{
-    width: 1024px;
+    width: 62rem;
     font-size: 20px;
+}
+
+@media screen and (max-width: 999px){
+    .homeTitle{
+        text-align: center;
+        width: fit-content;
+        text-transform: uppercase;
+    }
 }

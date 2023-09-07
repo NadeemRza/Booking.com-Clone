@@ -1,6 +1,6 @@
 .fpList{
     width: 100%;
-    max-width: 1024px;
+    max-width: 64rem;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -46,4 +46,21 @@
 
 .fpListRating>span{
     font-size: 14px;
+}
+
+@media screen and (max-width: 549px){
+    .fpList{
+        width: 90%;
+        display: block;
+    }
+
+    .fpListItem{
+        padding-bottom: 1.5rem;
+        border: 1px solid #dfdfdf;
+        margin-bottom: 0.7rem;
+    }
+
+    .fpListName, .fpListCity, .fpListPrice, .fpListRating {
+        padding-left: 0.5rem;
+    }
 }

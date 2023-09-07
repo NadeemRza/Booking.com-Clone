@@ -8,6 +8,16 @@
     align-items: center;
     gap: 20px;
     padding: 40px;
+    justify-content: center;
+}
+
+.mailInputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
 }
 
 .mailInputContainer>input{
@@ -15,7 +25,7 @@
     height: 30px;
     padding: 10px;
     border: none;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     border-radius: 5px;
 }
 
@@ -28,4 +38,19 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 0 37px;
+}
+
+@media screen and (max-width: 549px){
+    .mailInputContainer{
+        margin: 0 auto;
+    }
+
+    .mail{
+        width: auto;
+    }
+
+    .mailInputContainer>input{
+        width: 15rem;
+        height: 1.1rem;
+    }
 }

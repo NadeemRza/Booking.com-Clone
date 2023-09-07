@@ -4,6 +4,8 @@
     font-size: 12px;
     margin: 0 auto;
     padding: 15px 0;
+    background: #eee;
+    margin-top: 1rem;
 }
 
 .fLists{
@@ -26,4 +28,15 @@
 
 .fText{
     text-align: center;
+}
+
+@media screen and (max-width: 999px){
+    .fLists{
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    .fList{
+        padding:0 0.2rem;
+    }
 }
