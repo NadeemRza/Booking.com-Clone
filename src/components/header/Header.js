@@ -97,10 +97,11 @@ const Header = ({ type }) => {
               onChange={e=>setDestination(e.target.value)}
             />
           </div>
-          <div className="headerSearchItem">
+          <div className="headerSearchItem"
+            onMouseOver={() => setOpenDate(!openDate)}
+          >
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
             <span
-              onMouseOver={() => setOpenDate(!openDate)}
               className="headerSearchText"
             >{`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(
               date[0].endDate,
@@ -117,11 +118,12 @@ const Header = ({ type }) => {
               />
             )}
           </div>
-          <div className="headerSearchItem">
+          <div className="headerSearchItem"
+            onMouseOver={() => setOpenOptions(!openOptions)}
+          >
             <FontAwesomeIcon icon={faPerson} className="headerIcon" />
             <span
               className="headerSearchText"
-              onMouseOver={() => setOpenOptions(!openOptions)}
             >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
             {openOptions && (
               <div className="options">
