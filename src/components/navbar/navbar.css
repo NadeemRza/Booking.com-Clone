@@ -21,6 +21,7 @@
 .logo{
     font-weight: 1000;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .navButton{

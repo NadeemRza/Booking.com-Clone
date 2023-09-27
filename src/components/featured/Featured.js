@@ -2,7 +2,10 @@ import './featured.css';
 
 const Featured = () => {
   return (
-    <div className='featured'>
+    <div className='featured' onClick={(e)=> {
+      let url = e.target.closest(".featuredItem").querySelector("h2").innerText.replace(" ", "-");
+      window.location.assign(`/hotels/${url}`)
+    }}>
       <div className="featuredItem">
         <img src="https://r-xx.bstatic.com/xdata/images/region/250x250/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=" alt="img" className="featuredImg" />
         <div className="featuredTitles">

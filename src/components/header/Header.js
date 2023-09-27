@@ -84,7 +84,7 @@ const Header = ({ type }) => {
         <h1 className="headerTitle">A lifetime of discounts? It's Genius.</h1>
         <p className="headerDesc">
           Get rewarded for your travels - unlock instant savings of 10% or more
-          with a free Razvi booking account
+          with a free Razvi booking account.
         </p>
         <button className="headerBtn">Sign in/ Register</button>
         <div className="headerSearch">
@@ -97,12 +97,11 @@ const Header = ({ type }) => {
               onChange={e=>setDestination(e.target.value)}
             />
           </div>
-          <div className="headerSearchItem"
-            onMouseOver={() => setOpenDate(!openDate)}
-          >
+          <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
             <span
               className="headerSearchText"
+              onMouseOver={() => {setOpenDate(!openDate); setOpenOptions(false)}}
             >{`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(
               date[0].endDate,
               "dd/MM/yyyy"
@@ -118,12 +117,11 @@ const Header = ({ type }) => {
               />
             )}
           </div>
-          <div className="headerSearchItem"
-            onMouseOver={() => setOpenOptions(!openOptions)}
-          >
+          <div className="headerSearchItem">
             <FontAwesomeIcon icon={faPerson} className="headerIcon" />
             <span
               className="headerSearchText"
+              onMouseOver={() => {setOpenOptions(!openOptions); setOpenDate(false)}}
             >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
             {openOptions && (
               <div className="options">

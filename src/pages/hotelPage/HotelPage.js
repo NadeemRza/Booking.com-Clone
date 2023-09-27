@@ -24,13 +24,13 @@ const HotelPage = () => {
       src: "https://cf.bstatic.com/xdata/images/hotel/max500/404715710.jpg?k=cc67bcfc48e18dcf55204e95a241f772ee66f914900599d9577eddbe21f30b3e&o=&hp=1",
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max300/404715705.jpg?k=9f976071e7039defa71ec28bc41b0e788a024b3f6a81dea0dd8aefe73f02622c&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max500/404715705.jpg?k=9f976071e7039defa71ec28bc41b0e788a024b3f6a81dea0dd8aefe73f02622c&o=&hp=1",
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max300/404715706.jpg?k=05a13766fec3e1f22bc5d858969a52141b1440f22abdcb99746601f67f53a097&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max500/404715706.jpg?k=05a13766fec3e1f22bc5d858969a52141b1440f22abdcb99746601f67f53a097&o=&hp=1",
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/max300/404715773.jpg?k=4506497af92cfef68e3195530b5dd3b1f40960fadbff9533c3e8573d932a2159&o=&hp=1",
+      src: "https://cf.bstatic.com/xdata/images/hotel/max500/404715773.jpg?k=4506497af92cfef68e3195530b5dd3b1f40960fadbff9533c3e8573d932a2159&o=&hp=1",
     },
   ];
 
@@ -39,10 +39,10 @@ const HotelPage = () => {
     setOpen(true)
   };
 
-  const handleMove = (dir) => {
+  const handleMove = (direction) => {
     let newSlideNo;
 
-    if(dir === 'l') {
+    if(direction === 'l') {
       newSlideNo = slideNo === 0 ? 5 : slideNo-1;
     } else {
       newSlideNo = slideNo === 5 ? 0 : slideNo+1;

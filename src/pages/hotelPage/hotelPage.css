@@ -135,6 +135,7 @@
 .sliderImg{
     width: 80%;
     height: 80vh;
+    min-height: 80vh;
 }
 
 .close{
@@ -151,4 +152,9 @@
     font-size: 45px;
     color: #d3d3d3;
     cursor: pointer;
+}
+
+.slider > svg:hover{
+    transition: color ease-in 0.2s;
+    color: #fff;
 }

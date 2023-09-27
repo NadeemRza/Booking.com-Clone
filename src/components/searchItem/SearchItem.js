@@ -26,7 +26,7 @@ const SearchItem = () => {
         </div>
         <div className="siDetailTexts">
             <span className="siPrice">
-                Rs. 12,425
+                Rs. 8,425
             </span>
             <span className="siTaxOp">Includes taxes and fees</span>
             <button className="siCheckButton">See availability</button>

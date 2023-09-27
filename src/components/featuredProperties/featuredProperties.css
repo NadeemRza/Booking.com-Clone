@@ -1,3 +1,7 @@
+.ml-02{
+    margin-left: 0.2rem;
+}
+
 .fpList{
     width: 100%;
     max-width: 64rem;
@@ -14,6 +18,9 @@
     gap: 10px;
     display: flex;
     flex-direction: column;
+    border: 1px solid #ffecec;
+    padding: 0 0 0.5rem 0;
+    cursor: pointer;
 }
 
 .fpListImg{

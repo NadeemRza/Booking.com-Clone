@@ -9,12 +9,12 @@ const FeaturedProperties = () => {
           alt="fpimg"
           className="fpListImg"
         />
-        <span className="fpListName">
+        <span className="fpListName ml-02">
           6 Continents Apartments by Prague Residences
         </span>
-        <span className="fpListCity">Prague 1, Czech Republic, Prague</span>
-        <span className="fpListPrice">Strating from Rs.12,413</span>
-        <div className="fpListRating">
+        <span className="fpListCity ml-02">Prague 1, Czech Republic, Prague</span>
+        <span className="fpListPrice ml-02">Strating from Rs.12,413</span>
+        <div className="fpListRating ml-02">
           <button>8.4</button>
           <span>Very Good · </span>
           <span> 250 reviews</span>
@@ -26,12 +26,12 @@ const FeaturedProperties = () => {
           alt="fpimg"
           className="fpListImg"
         />
-        <span className="fpListName">
+        <span className="fpListName ml-02">
             Villa Domina
         </span>
-        <span className="fpListCity">Split City Center, Croatia, Split</span>
-        <span className="fpListPrice">Strating from Rs.3,401</span>
-        <div className="fpListRating">
+        <span className="fpListCity ml-02">Split City Center, Croatia, Split</span>
+        <span className="fpListPrice ml-02">Strating from Rs.3,401</span>
+        <div className="fpListRating ml-02">
           <button>9.4</button>
           <span>Wonderful · </span>
           <span> 1003 reviews</span>
@@ -43,12 +43,12 @@ const FeaturedProperties = () => {
           alt="fpimg"
           className="fpListImg"
         />
-        <span className="fpListName">
+        <span className="fpListName ml-02">
             7Seasons Apartments Budapest
         </span>
-        <span className="fpListCity">06. Terézváros, Hungary, Budapest</span>
-        <span className="fpListPrice">Strating from Rs.10,772</span>
-        <div className="fpListRating">
+        <span className="fpListCity ml-02">06. Terézváros, Hungary, Budapest</span>
+        <span className="fpListPrice ml-02">Strating from Rs.10,772</span>
+        <div className="fpListRating ml-02">
           <button>8.8</button>
           <span>Excellent · </span>
           <span> 6,952 reviews</span>
@@ -60,12 +60,12 @@ const FeaturedProperties = () => {
           alt="fpimg"
           className="fpListImg"
         />
-        <span className="fpListName">
+        <span className="fpListName ml-02">
             Aparthotel Stare Miasto
         </span>
-        <span className="fpListCity">Old Town, Poland, Kraków</span>
-        <span className="fpListPrice">Strating from Rs.9,279</span>
-        <div className="fpListRating">
+        <span className="fpListCity ml-02">Old Town, Poland, Kraków</span>
+        <span className="fpListPrice ml-02">Strating from Rs.9,279</span>
+        <div className="fpListRating ml-02">
           <button>8.7</button>
           <span>Excellent · </span>
           <span> 2,293 reviews</span>

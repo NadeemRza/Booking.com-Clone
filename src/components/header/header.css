@@ -43,6 +43,11 @@
     border: none;
 }
 
+.headerListItem.active{
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
 .headerListItem:hover {
     border: 1px solid #fff;
     transition: border linear 2s;
