@@ -1,0 +1,49 @@
+.footer{
+    width: 100%;
+    max-width: 100%;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 15px 0.5rem;
+    background: #eee;
+    margin-top: 1rem;
+}
+
+.fLists{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.fList{
+    list-style: none;
+    padding: 0;
+}
+
+.fListItem{
+    margin-bottom: 10px;
+    color: #003580;
+    cursor: pointer;
+}
+
+.fText{
+    text-align: center;
+}
+
+@media screen and (max-width: 999px){
+    .fLists{
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .fList{
+        padding:0 0.2rem;
+    }
+}
+
+@media screen and (max-width: 999px){
+    .fLists{
+        justify-content: space-around;
+    }
+}
