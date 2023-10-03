@@ -8,10 +8,10 @@ dotenv.config();
 
 import cookieParser from "cookie-parser";
 
-import authRoute from "./api/routes/auth.js";
-import usersRoute from "./api/routes/users.js";
-import hotelsRoute from "./api/routes/hotels.js";
-import roomsRoute from "./api/routes/rooms.js";
+import authRoute from "./routes/auth.js";
+import usersRoute from "./routes/users.js";
+import hotelsRoute from "./routes/hotels.js";
+import roomsRoute from "./routes/rooms.js";
 
 const connectMongodb = async () => {
     try {

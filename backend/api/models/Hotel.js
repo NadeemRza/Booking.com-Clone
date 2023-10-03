@@ -49,7 +49,7 @@ const hotelSchema = new Schema({
     featured: {
         type: Boolean,
         default: false,
-    },
+    }
 })
 
 export default mongoose.model( "Hotel", hotelSchema);
