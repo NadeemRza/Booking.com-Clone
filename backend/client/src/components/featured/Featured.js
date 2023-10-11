@@ -1,6 +1,12 @@
+import useFetch from '../../hooks/useFetch';
 import './featured.css';
 
 const Featured = () => {
+
+  const {data,loading,error} = useFetch("/hotels/countByCity?cities=Mumbai,Pune,Vapi");
+
+  console.log(data);
+
   return (
     <div className='featured' onClick={(e)=> {
       let url = e.target.closest(".featuredItem").querySelector("h2").innerText.replace(" ", "-");
