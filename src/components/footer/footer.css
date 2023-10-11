@@ -1,5 +1,5 @@
 .footer{
-    width: 100%;
+    width: 98%;
     max-width: 100%;
     font-size: 12px;
     margin: 0 auto;
@@ -44,6 +44,7 @@
 
 @media screen and (max-width: 999px){
     .fLists{
-        justify-content: space-around;
+        justify-content: flex-start;
+        column-gap: 3rem;
     }
 }
