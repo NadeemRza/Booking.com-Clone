@@ -16,12 +16,17 @@
 
 .pListImg{
     width: 100%;
-    height: 9.38rem;
+    height: 12rem;
     object-fit: cover;
+}
+
+.pListTitles{
+    text-align: center;
 }
 
 .pListTitles>h3{
     font-size: 18px;
+    text-transform: capitalize;
 }
 
 .pListTitles>h4{

@@ -46,9 +46,10 @@
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 3px;
+    padding: 2px 8px 6px 8px;
     margin-right: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 .fpListRating>span{

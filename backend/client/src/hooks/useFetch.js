@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import axios from 'axios';
 
 const useFetch = (url) => {
     const [data,setData] = useState([]);
@@ -17,7 +18,7 @@ const useFetch = (url) => {
             setloading(false);
         }
         fetchData();
-    }, url);
+    }, [url]);
 
     const reFetchData = async () => {
         setloading(true);

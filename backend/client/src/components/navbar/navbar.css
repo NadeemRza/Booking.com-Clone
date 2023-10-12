@@ -18,10 +18,19 @@
     padding: 0 2rem;
 }
 
+.navLogoLink{
+    text-decoration: none;
+}
+
 .logo{
     font-weight: 1000;
     text-transform: uppercase;
     cursor: pointer;
+    color: #fff;
+}
+
+.logo:hover{
+    color: #0071c2;
 }
 
 .navButton{

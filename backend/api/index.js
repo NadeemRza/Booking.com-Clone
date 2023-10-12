@@ -13,6 +13,8 @@ import usersRoute from "./routes/users.js";
 import hotelsRoute from "./routes/hotels.js";
 import roomsRoute from "./routes/rooms.js";
 
+import cors from "cors";
+
 const connectMongodb = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URI);
@@ -31,7 +33,8 @@ mongoose.connection.on("connected", ()=>{
 })
 
 //middlewares
-app.use(cookieParser())
+app.use(cors());
+app.use(cookieParser());
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
