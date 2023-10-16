@@ -17,25 +17,39 @@ const FeaturedProperties = () => {
         "Loading Data Please wait..."
       ) : (
         <>
-          {data && images.map((image, index) => (
-            <div className="fpListItem" key={index}>
-              <img src={image} alt={`fpimg${index}`} className="fpListImg" />
-              <span className="fpListName ml-02">
-               {data[index]?.name}
-              </span>
-              <span className="fpListCity ml-02">
-                {data[index]?.address}, {data[index]?.city}
-              </span>
-              <span className="fpListPrice ml-02">Strating from Rs.{data[index]?.cheapestPrice}</span>
-              <div className="fpListRating ml-02">
-                <button>{data[index]?.rating || 5} &#9733;</button>
-                <span>{ data[index]?.rating === 0 ? "Excellent  ·" : data[index]?.rating === 5 ? "Excellent  ·" : data[index]?.rating < 3 ? "Good ·" : "Very Good ·" }</span>
-                <span> {Math.floor(Math.random() * (500 - 100 + 1) + 100)} reviews</span>
+          {data &&
+            images.map((image, index) => (
+              <div className="fpListItem" key={data[index]?._id}>
+                <img
+                  src={data[index]?.photos[0] || image}
+                  alt={`fpimg${index}`}
+                  className="fpListImg"
+                />
+                <span className="fpListName ml-02">{data[index]?.name}</span>
+                <span className="fpListCity ml-02">
+                  {data[index]?.address}, {data[index]?.city}
+                </span>
+                <span className="fpListPrice ml-02">
+                  Strating from Rs.{data[index]?.cheapestPrice}
+                </span>
+                <div className="fpListRating ml-02">
+                  <button>{data[index]?.rating || 5} &#9733;</button>
+                  <span>
+                    {data[index]?.rating === 0
+                      ? "Excellent  ·"
+                      : data[index]?.rating === 5
+                      ? "Excellent  ·"
+                      : data[index]?.rating < 3
+                      ? "Good ·"
+                      : "Very Good ·"}
+                  </span>
+                  <span>
+                    {" "}
+                    {Math.floor(Math.random() * (500 - 100 + 1) + 100)} reviews
+                  </span>
+                </div>
               </div>
-            </div>
-
-          )) 
-          }
+            ))}
         </>
       )}
     </div>

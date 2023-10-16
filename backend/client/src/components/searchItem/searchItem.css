@@ -35,7 +35,7 @@
     background-color: #008009;
     color: #fff;
     width: max-content;
-    padding: 3px;
+    padding: 0.3rem 0.6rem;
     border-radius: 5px;
 }
 
@@ -69,6 +69,7 @@
 .siRating{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .siRating>span{
@@ -78,9 +79,10 @@
 .siRating>button{
     background-color: #003580;
     color: #fff;
-    padding: 5px;
+    padding: 0.3rem 0.7rem;
     font-weight: bold;
     border: none;
+    border-radius: 0.2rem;
 }
 
 .siDetailTexts{
@@ -91,7 +93,7 @@
 }
 
 .siPrice{
-    font-size: 24px;
+    font-size: 1.35rem;
 }
 
 .siTaxOp{
@@ -107,4 +109,19 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 549px){
+    .siPrice{
+        font-size: 1rem;
+    }
+
+    .siTaxOp{
+        font-size: 0.6rem;
+    }
+
+    .siCheckButton{
+        font-size: 0.55rem;
+        padding: 0.7rem;
+    }
 }

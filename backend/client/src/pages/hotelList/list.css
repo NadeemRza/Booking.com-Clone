@@ -1,3 +1,7 @@
+.not_found_text{
+    text-align: center;
+}
+
 .listContainer{
     display: flex;
     justify-content: center;
@@ -83,3 +87,12 @@
     flex: 3;
 }
 
+@media screen and (max-width: 549px){
+    .listWrapper{
+        flex-direction: column;
+    }
+
+    .listSearch{
+        position: relative;
+    }
+}
