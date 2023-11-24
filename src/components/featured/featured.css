@@ -1,0 +1,43 @@
+.featured{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.featuredItem{
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.featuredImg{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.featuredTitles{
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 549px){
+    .featured{
+        display: block;
+        margin: 0 auto;
+        margin-top: 3.5rem;
+    }
+
+    .featuredItem{
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+}
