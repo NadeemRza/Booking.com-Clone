@@ -43,7 +43,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://razavi-booking.onrender.com",
+  "proxy": "https://razavi-booking-new-nadeem.netlify.app/",
   "devDependencies": {
     "nodemon": "^3.0.1"
   }
