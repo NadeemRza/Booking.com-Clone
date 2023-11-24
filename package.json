@@ -43,7 +43,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000/api",
+  "proxy": "https://razavi-booking.onrender.com",
   "devDependencies": {
     "nodemon": "^3.0.1"
   }
